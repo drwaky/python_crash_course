@@ -16,4 +16,4 @@ I hope you find something useful here or just learn about something curious.
 
 Just be sure you enjoy the journey.
 
-Made with <3 by [@DrWaky](https://x.com/drwaky)
+Made with ❤️ by [@DrWaky](https://x.com/drwaky)
