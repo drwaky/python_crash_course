@@ -248,3 +248,84 @@ print("\nGetting the length of the list"
 length = len(star_wars_characters)
 
 print(f"Length: {length}")
+
+
+# FOR IN loop for lists
+# 'for element in list:'
+
+# The 'for' loop is used to iterate over a list, it is an immutable operation,
+# the original list is not modified
+print("\nFOR IN loop for lists 'for element in list:'")
+
+for character in star_wars_characters:
+    print(f"I am, {character.title()}")
+    print(f"Hello there, {character.title()}!\n")
+print("These are the characters of the list.")
+
+
+# Range function
+# 'range' function. 'range(start, stop, step)'
+
+# The 'range' function generates a sequence of numbers from 'start' to
+# 'stop - 1' with a 'step' increment
+print("\nRange function"
+    " 'range(start, stop, step)':")
+
+# You can use 'range' function to create a list of numbers
+# 'numbers = list(range(start, stop))'
+
+numeric_list = list(range(1, 6))
+print(f"Numeric list created with 'range' function: {numeric_list}")
+
+print("Print numbers from 1 to 5: range(1, 6)")
+for number in range(1, 6):
+    print(number)
+
+# If 'start' is not specified, it is assumed to be 0
+print("\nPrint numbers from 0 to 5: range(6)")
+for number in range(6):
+    print(number)
+
+# If 'step' is not specified, it is assumed to be 1
+print("\nPrint even numbers from 0 to 10: range(0, 11, 2)")
+for number in range(0, 11, 2):
+    print(number)
+
+# If 'step' is negative, the sequence is decreasing
+print("\nPrint numbers from 10 to 0: range(10, -1, -1)")
+for number in range(10, -1, -1):
+    print(number)
+
+# Let's print a series of the squares of the numbers from 1 to 10
+squares = []
+for number in range(1, 11):
+    squares.append(number ** 2)
+
+print(f"\nSquares of the numbers from 1 to 10: {squares}")
+
+
+# List comprehension
+# 'list comprehension' expression. '[expression for element in list]'
+print("\nList comprehension"
+    " 'list comprehension' expression. '[expression for element in list]':")
+
+# Let's print a series of the squares of the numbers from 1 to 10 but using
+# list comprehension
+
+squares2 = [number ** 2 for number in range(1, 11)]
+
+print(f"\nSquares of the numbers from 1 to 10 using list comprenhension: {squares2}")
+
+
+# Simple stadistic functions to use with list of numbers
+# 'min(numeric_list)', 'max(numertic_list)', and 'sum(numeric_list)'
+
+# They return the minimum and maximum values in the list, and the summation of
+# all the values in the list.
+
+even_numbers = list(range(2, 21, 2))
+print(f"\nList of the first ten even numbers: {even_numbers}")
+
+print(f"\nMinimum number in the first ten even numbers: {min(even_numbers)}")
+print(f"Maximum number in the first ten even numbers: {max(even_numbers)}")
+print(f"Summation number in the first ten even numbers: {sum(even_numbers)}")
